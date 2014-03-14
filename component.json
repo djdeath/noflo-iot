@@ -1,0 +1,25 @@
+{
+  "name": "noflo-iot",
+  "description": "NoFlo IoT components",
+  "author": "Lionel Landwerlin <lionel.g.landwerlin@linux.intel.com>",
+  "repo": "djdeath/noflo-iot",
+  "version": "0.0.1",
+  "keywords": [
+  ],
+  "dependencies": {
+    "noflo/noflo": "*",
+    "noflo/noflo-core": "*"
+    "noflo/noflo-strings": "*",
+    "noflo/noflo-packets": "*",
+    "noflo/noflo-objects": "*",
+    "noflo/noflo-routers": "*",
+    "noflo/noflo-groups": "*",
+    "noflo/noflo-flow": "*",
+    "noflo/noflo-adapters": "*",
+    "noflo/noflo-xml": "*",
+    "noflo/noflo-filesystem": "*",
+    "noflo/noflo-webserver": "*",
+    "noflo/noflo-math", "*",
+    "noflo/noflo-gpio", "*"
+  }
+}

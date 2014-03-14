@@ -1,0 +1,46 @@
+{
+  "name": "noflo-iot",
+  "description": "Compilation of IoT packages for NoFlo",
+  "version": "0.0.1",
+  "author": {
+    "name": "Lionel Landwerlin",
+    "email": "lionel.g.landwerlin@linux.intel.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/djdeath/noflo-iot.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "undefined/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "noflo": "~0.4.4",
+    "noflo-core": "~0.1.3",
+    "noflo-strings": "~0.1.5",
+    "noflo-packets": "~0.1.3",
+    "noflo-objects": "~0.1.8",
+    "noflo-routers": "~0.1.1",
+    "noflo-groups": "~0.1.3",
+    "noflo-flow": "~0.3.3",
+    "noflo-adapters": "~0.1.2",
+    "noflo-xml": "~0.0.2",
+    "noflo-filesystem": "~1.0.4",
+    "noflo-webserver": "~0.0.3",
+    "noflo-math", "git://github.com:djdeath/noflo-math.git#modulo",
+    "noflo-gpio", "git://github.com:djdeath/noflo-gpio.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.6.6",
+    "grunt-coffeelint": "~0.0.6",
+    "grunt-component-build": "~0.2.7",
+    "grunt-contrib-uglify": "~0.2.0",
+    "component-json": "git://github.com/CamShaft/component-json.git",
+    "grunt-combine": "~0.8.3",
+    "grunt-component": "~0.1.2"
+  },
+  "keywords": []
+}
