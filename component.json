@@ -8,7 +8,7 @@
   ],
   "dependencies": {
     "noflo/noflo": "*",
-    "noflo/noflo-core": "*"
+    "noflo/noflo-core": "*",
     "noflo/noflo-strings": "*",
     "noflo/noflo-packets": "*",
     "noflo/noflo-objects": "*",
@@ -16,10 +16,15 @@
     "noflo/noflo-groups": "*",
     "noflo/noflo-flow": "*",
     "noflo/noflo-adapters": "*",
-    "noflo/noflo-xml": "*",
-    "noflo/noflo-filesystem": "*",
-    "noflo/noflo-webserver": "*",
-    "noflo/noflo-math", "*",
-    "noflo/noflo-gpio", "*"
-  }
+    "djdeath/noflo-xml": "*",
+    "djdeath/noflo-filesystem": "*",
+    "djdeath/noflo-math": "modulo",
+    "djdeath/noflo-gpio": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "json": [
+    "component.json"
+  ]
 }

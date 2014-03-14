@@ -50,11 +50,6 @@ module.exports = ->
         files:
           './browser/noflo-iot.min.js': ['./browser/noflo-iot.js']
 
-    # Coding standards
-    coffeelint:
-      components: ['components/*.coffee']
-
-
   # Grunt plugins used for building
   @loadNpmTasks 'grunt-contrib-coffee'
   @loadNpmTasks 'grunt-component'
