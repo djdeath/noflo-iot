@@ -16,6 +16,8 @@
     "noflo/noflo-groups": "*",
     "noflo/noflo-flow": "*",
     "noflo/noflo-adapters": "*",
+    "noflo/noflo-runtime-base": "*",
+    "noflo/fbp": "*",
     "djdeath/noflo-xml": "*",
     "djdeath/noflo-filesystem": "*",
     "djdeath/noflo-math": "modulo",
