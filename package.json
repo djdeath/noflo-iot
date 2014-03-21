@@ -17,7 +17,9 @@
     }
   ],
   "dependencies": {
-    "noflo": "~0.4.4"
+    "fs.extra": "~0.6.4",
+    "owl-deepcopy": "~0.0.2",
+    "websocket": "~1.0.8"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
