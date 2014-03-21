@@ -5,7 +5,7 @@ module.exports = ->
 
     # Install components
     component:
-      install:
+      'noflo-iot':
         options:
           action: 'install'
 
@@ -40,15 +40,18 @@ module.exports = ->
 
     # Combine custom version of component-require
     concat:
-      dist:
+      'noflo-iot':
         src: ['node_modules/component-require/lib/require.js', 'build/noflo-iot-pre.js']
         dest: 'build/noflo-iot.js'
+      'noflo-iot-bin':
+        src: ['header.js', 'build/noflo-iot.js', 'aliases.js', 'server.js']
+        dest: 'build/noflo-iot-bin.js'
 
     # JavaScript minification (Because it's FAST!!!)
     uglify:
-      options:
-        report: 'min'
-      noflo:
+      'noflo-iot':
+        options:
+          report: 'min'
         files:
           './build/noflo-iot.min.js': ['./build/noflo-iot.js']
 
@@ -60,4 +63,5 @@ module.exports = ->
   @loadNpmTasks 'grunt-contrib-uglify'
 
   # Our local tasks
-  @registerTask 'build', ['component', 'componentbuild', 'combine', 'concat', 'uglify' ]
+  @registerTask 'build', ['component:noflo-iot', 'componentbuild:noflo-iot', 'combine:noflo-iot', 'concat:noflo-iot', 'uglify:noflo-iot' ]
+  @registerTask 'build-binary', ['build', 'concat:noflo-iot-bin' ]
