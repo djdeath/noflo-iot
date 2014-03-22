@@ -3,6 +3,13 @@ module.exports = ->
   @initConfig
     pkg: @file.readJSON 'package.json'
 
+    # Directory cleaning
+    clean:
+      'noflo-iot-components':
+        src: ['components']
+      'noflo-iot':
+        src: ['build']
+
     # Install components
     component:
       'noflo-iot':
@@ -61,7 +68,10 @@ module.exports = ->
   @loadNpmTasks 'grunt-combine'
   @loadNpmTasks 'grunt-contrib-concat'
   @loadNpmTasks 'grunt-contrib-uglify'
+  @loadNpmTasks 'grunt-contrib-clean'
 
   # Our local tasks
   @registerTask 'build-components', ['component:noflo-iot', 'componentbuild:noflo-iot', 'combine:noflo-iot', 'concat:noflo-iot', 'uglify:noflo-iot']
   @registerTask 'build', ['build-components', 'concat:noflo-iot-bin']
+
+  @registerTask 'nuke', ['clean:noflo-iot-components', 'clean:noflo-iot']
