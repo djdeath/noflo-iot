@@ -63,5 +63,5 @@ module.exports = ->
   @loadNpmTasks 'grunt-contrib-uglify'
 
   # Our local tasks
-  @registerTask 'build', ['component:noflo-iot', 'componentbuild:noflo-iot', 'combine:noflo-iot', 'concat:noflo-iot', 'uglify:noflo-iot' ]
-  @registerTask 'build-binary', ['build', 'concat:noflo-iot-bin' ]
+  @registerTask 'build-components', ['component:noflo-iot', 'componentbuild:noflo-iot', 'combine:noflo-iot', 'concat:noflo-iot', 'uglify:noflo-iot']
+  @registerTask 'build', ['build-components', 'concat:noflo-iot-bin']
