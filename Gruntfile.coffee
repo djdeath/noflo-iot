@@ -75,3 +75,5 @@ module.exports = ->
   @registerTask 'build', ['build-components', 'concat:noflo-iot-bin']
 
   @registerTask 'nuke', ['clean:noflo-iot-components', 'clean:noflo-iot']
+
+  @registerTask 'default', ['build']
