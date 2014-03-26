@@ -21,6 +21,7 @@
     "djdeath/noflo-filesystem": "*",
     "djdeath/noflo-math": "iot",
     "djdeath/noflo-gpio": "*",
+    "djdeath/noflo-tween": "*",
     "djdeath/noflo-runtime-websocket": "componentization"
   },
   "scripts": [
