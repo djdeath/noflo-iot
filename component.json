@@ -23,6 +23,7 @@
     "djdeath/noflo-xml": "*",
     "djdeath/noflo-filesystem": "*",
     "djdeath/noflo-math": "iot",
+    "djdeath/noflo-galileo": "*",
     "djdeath/noflo-micro": "*",
     "djdeath/noflo-tween": "*",
     "djdeath/noflo-runtime-websocket": "componentization"
