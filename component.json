@@ -1,7 +1,10 @@
 {
   "name": "noflo-iot",
   "description": "NoFlo IoT components",
-  "author": "Lionel Landwerlin <lionel.g.landwerlin@linux.intel.com>",
+  "author": {
+    "name": "Lionel Landwerlin",
+    "email": "lionel.g.landwerlin@linux.intel.com"
+  },
   "repo": "djdeath/noflo-iot",
   "version": "0.0.1",
   "keywords": [
