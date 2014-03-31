@@ -19,6 +19,7 @@
   "dependencies": {
     "fs.extra": "~1.2.1",
     "gpio": "~0.2.5",
+    "mimetype": "~0.0.5",
     "owl-deepcopy": "~0.0.2",
     "spi": "~0.1.1",
     "websocket": "~1.0.8"
