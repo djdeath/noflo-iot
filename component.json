@@ -12,7 +12,7 @@
   "dependencies": {
     "jashkenas/underscore": "*",
     "noflo/noflo": "*",
-    "noflo/noflo-core": "*",
+    "djdeath/noflo-core": "missing-disconnect",
     "noflo/noflo-strings": "*",
     "noflo/noflo-packets": "*",
     "noflo/noflo-objects": "*",
